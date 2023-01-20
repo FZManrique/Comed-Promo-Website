@@ -1,0 +1,63 @@
+/* General Document Styles */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .desktop-hide {
+    display: block;
+  }
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+}
+
+header a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav .navToggle {
+  margin-left: auto;
+}
+
+header div {
+  display: none;
+}
+
+header div a {
+  width: 100%
+}
+
+header div.show {
+  display: flex;
+}
+
+@media screen and (min-width: 701px) {
+  header div.show {
+    display: none
+  }
+}
