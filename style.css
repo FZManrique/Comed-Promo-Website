@@ -19,10 +19,13 @@ body {
 
 /* Header */
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: black;
   color: white;
+  z-index: 10;
+  height: 44px;
 }
 
 header a {
@@ -60,4 +63,35 @@ header div.show {
   header div.show {
     display: none
   }
+}
+
+section {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Intro section */
+.intro {
+  margin-top: 54px;
+}
+
+.intro img {
+  height: 200px;
+  width: 200px;
+}
+
+/* Events section */
+.events .events__container {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
