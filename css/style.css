@@ -22,21 +22,20 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: black;
-  color: white;
+  background-color: var(--colors-accent);
+  color: var(--colors-accent-text);
   z-index: 10;
   height: 44px;
 }
 
 header a {
   padding: 10px;
-  color: white;
+  color: var(--colors-accent-text);
   text-decoration: none;
 }
 
 header a:hover {
-  background-color: lightgrey;
-  color: black;
+  background: var(--colors-accent-variant);
 }
 
 header nav {
@@ -91,7 +90,11 @@ section {
 
 /* Footer */
 footer {
-  background-color: black;
-  color: white;
+  background-color: var(--colors-primary);
   text-align: center;
+  padding: 20px;
+}
+
+footer div, footer ul {
+  width: min-content
 }
