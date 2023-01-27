@@ -7,8 +7,14 @@
   };
 }
 {
+  const date = new Date()
+  const year = date.getFullYear()
+  const yearEl = document.getElementById("year");
+  yearEl.textContent = year;
+}
+{
   let slideIndex = 0;
-  let slides = document.getElementsByClassName("slide__images");
+  const slides = document.getElementsByClassName("slide__images");
   showSlides()
 
 function showSlides() {
@@ -19,6 +25,6 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000);
 }
 }

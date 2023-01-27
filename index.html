@@ -66,22 +66,28 @@
       h2,
       h3,
       h4,
-      h5,s
-      h6 {
+      h5,
+      s h6 {
         overflow-wrap: break-word;
       }
     </style>
-    <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
   </head>
+  <body>
     <header>
       <nav>
         <a href="#">Home</a>
-        <a href="#" class="mobile-hide">About</a>        
+        <a href="#" class="mobile-hide" style="margin-left: auto">About</a>
         <a href="#" class="mobile-hide">News</a>
         <a href="#" class="mobile-hide">Contact Us</a>
-        <a href="#">Search lol</a>
+        <a href="#" class="search">
+          <img src="assets/search-icon.svg" width="24" height="24" />
+          <span>Search</span>
+        </a>
         <a href="#" class="navToggle desktop-hide">Menu</a>
       </nav>
       <div>
@@ -93,10 +99,10 @@
     <main>
       <section class="intro">
         <div class="slideshow">
-          <img src="" alt="image1" class="slide__images">
-          <img src="" alt="image2" class="slide__images">
+          <img src="assets/slideshow-img-1.jpg" alt="image1" class="slide__images" />
+          <img src="" alt="image2" class="slide__images" />
         </div>
-        <img src="assets/msu-logo.png">
+        <img src="assets/msu-logo.png" />
         <h1>Mindanao State University</h1>
         <ul>
           <li>Info here</li>
@@ -107,13 +113,11 @@
       <section class="events">
         <h2>Events</h2>
         <div class="events__container">
-          <div class="events__slideshow">
-            WIP slideshow
-          </div>
+          <div class="events__slideshow">TODO: slideshow</div>
           <div class="events__info">
             <ul>
-              <li>Example event</li>
-              <li>Example event</li>
+              <li>Year: Intramurals</li>
+              <li>Year: SciMath</li>
               <li>Example event</li>
               <li>Example event</li>
               <li>Example event</li>
@@ -125,13 +129,11 @@
       <section class="tour">
         <h2>Campus Tour</h2>
         <video controls>
-          <source src="">
+          <source src="" />
           Video
         </video>
       </section>
-      <section>
-
-      </section>
+      <section></section>
     </main>
     <footer>
       <div class="members">
@@ -145,7 +147,7 @@
           <li>Shandy</li>
         </ul>
       </div>
-      <p>&copy; 2023-<span id="year">2023</span>. Licensed under CC-BY-NC-ND</p>
+      <p>&copy; 2023-<span id="year">2023</span>. Licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC-BY-NC-ND</a></p>
     </footer>
     <script src="script.js"></script>
   </body>
