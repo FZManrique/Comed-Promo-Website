@@ -91,7 +91,8 @@ section {
 }
 
 h2 {
-  color: #780007
+  color: #780007;
+  margin-bottom: 20px;
 }
 
 /* Intro section */
@@ -100,7 +101,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-.intro > img {
+.intro > picture img {
   height: 200px;
   width: 200px;
   margin-top: 10px;
@@ -131,7 +132,25 @@ h2 {
 	width: auto;
 	min-height: 0;
 	min-width: 0;
-  object-fit: cover
+  object-fit: cover;
+  width: 100%
+}
+
+@media screen and (max-width: 500px) {
+  .image__wrapper {
+    flex-direction: column;
+    overflow: hidden;
+    height: 400px
+  }
+
+  .image__wrapper picture {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  .image {
+    width: 100%
+  }
 }
 
 /* Events section */
@@ -145,6 +164,12 @@ h2 {
 
 .events__info > p {
   margin: 20px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .events .events__container {
+    display: block;
+  }
 }
 
 /* Footer */
@@ -186,6 +211,7 @@ footer > p a:hover {
 	object-fit: contain;
 	background: black;
 	border-radius: 10px 10px 0 0;
+  width: 100%;
 }
 
 .cursor {
