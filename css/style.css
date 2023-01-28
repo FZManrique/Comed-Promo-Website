@@ -181,6 +181,13 @@ footer > p a:hover {
   display: none;
 }
 
+.slide img {
+	height: 250px;
+	object-fit: contain;
+	background: black;
+	border-radius: 10px 10px 0 0;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -203,6 +210,7 @@ footer > p a:hover {
 .numbertext {
   color: #f2f2f2;
   background-color: hsla(0, 0%, 0%, 0.5);
+  border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 12px;
   padding: 8px 12px;
@@ -234,8 +242,19 @@ footer > p a:hover {
   width: 33.33%;
 }
 
+.column:first-child img {
+  border-bottom-left-radius: 10px;
+}
+
+.column:last-child img {
+  border-bottom-right-radius: 10px;
+}
+
 .demo {
-  opacity: 0.6;
+	opacity: 0.6;
+	height: 100px;
+	object-fit: cover;
+	width: 100%;
 }
 
 .active,
